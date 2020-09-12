@@ -42,7 +42,7 @@ json = json.replaceAll("AF_initDataCallback", "").replaceAll(";</script", "").su
 ```java
 public static List<Item> fetchJson(String json) throws JSONException {
     JSONObject obj = new JSONObject(json);
-    //AF_initDataChunkQueue[6]["data"][0][1][0][0][0]
+    
     String query = BASE_URL + "apps/details?id=";
     List<Item> items = new ArrayList<>();
 
